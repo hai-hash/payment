@@ -54,7 +54,8 @@ const options = {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(requestBody)
+        'Content-Length': Buffer.byteLength(requestBody),
+        'Access-Control-Allow-Origin': '*',
     }
 }
 //Send the request and get the response
